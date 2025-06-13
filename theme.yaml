@@ -1,21 +1,24 @@
 apiVersion: theme.halo.run/v1alpha1
 kind: Theme
-metadata:
-  name: theme-modern-starter
 spec:
-  displayName: Modern Starter
+  customTemplates:
+    page:
+      - name: 友情链接
+        description: 支持可预设文本的友链
+        screenshot: 
+        file: page_links.html
+  displayName: Dongmao
   author:
-    name: Halo
-    website: https://github.com/halo-dev
-  description: A development starter theme with Vite Ecosystem for Halo
-  logo: https://www.halo.run/logo
-  homepage: https://github.com/halo-dev/theme-modern-starter#readme
-  repo: https://github.com/halo-dev/theme-modern-starter
-  issues: https://github.com/halo-dev/theme-modern-starter/issues
-  settingName: "theme-modern-starter-setting"
-  configMapName: "theme-modern-starter-configMap"
-  version: "1.0.0"
-  requires: "2.0.0"
-  license:
-    - name: "GPL-3.0"
-      url: "https://github.com/halo-dev/theme-modern-starter/blob/main/LICENSE"
+    name: Ginkyo
+    website: https://lixingyong.com
+  description: DONGMAO主题
+  logo: /themes/theme-dongmao/assets/images/search/iloli.gif
+  website: https://github.com/Ginkyo/theme-dongmao
+  repo: https://github.com/Ginkyo/theme-dongmao.git
+  settingName: theme-dongmao-setting
+  configMapName: theme-dongmao-configMap
+  # 通过 vite 环境变量 (VITE_THEME_VERSION) 配置，这里不需要配置。
+  version: 2.4.3
+  require: ">=2.19.0"
+metadata:
+  name: theme-dongmao
